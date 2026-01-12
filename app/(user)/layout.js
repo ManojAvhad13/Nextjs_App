@@ -1,6 +1,6 @@
 import React from 'react'
-import Navigation from '../components/Navigation'
-import "./globals.css";
+import "../globals.css";
+import Navigation from '@/components/Navigation';
 
 const layout = ({ children }) => {
   return (
