@@ -19,7 +19,7 @@ const gravitasOne = Gravitas_One({
   weight: '400' // Gravitas One has only one weight
 });
 
-// Using "veriable fonts" for the best performance and flexibility and dont need to specify weight . But if you cant use a variable font, 
+// Using "veriable fonts" for the best performance and flexibility and dont need to specify weight. But if you cant use a variable font, 
 // you will need to specify a weight.
 
 

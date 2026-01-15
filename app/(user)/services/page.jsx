@@ -2,6 +2,13 @@ import React from 'react'
 import style from "./service.module.css"
 import Image from 'next/image'
 
+export const metadata = {
+    title: "Service Page",
+    description: "This is my service page",
+    authors: [{ name: "Manoj Avhad" }, { name: "Avahd" }],
+    kaywords: ['nextjs', 'reactjs', 'fullstack'],
+}
+
 const page = () => {
     return (
         <>
