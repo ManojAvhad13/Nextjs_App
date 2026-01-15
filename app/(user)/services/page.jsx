@@ -112,6 +112,15 @@ const page = () => {
                         </div>
 
                     </div>
+
+                    <div>
+                        <br />
+                        <h1 className='text-lg font-bold'>Notes: </h1>
+                        <br />
+                        <p>1. quality={100} using this property increase image quality & size</p>
+                        <br />
+                        <p>2. priority={false} using this property access lazy loading means when user see this image that time loads this image otherwise does not load</p>
+                    </div>
                 </div>
             </section>
         </>
