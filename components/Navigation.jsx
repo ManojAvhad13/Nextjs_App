@@ -13,6 +13,7 @@ const Navigation = () => {
                         <li><Link href="/clientcomp">Clinet</Link></li>
                         <li><Link href="/services">Services</Link></li>
                         <li><Link href="/contact">Contact</Link></li>
+                        <li><Link href="/servercomp">Server</Link></li>
                     </ul>
                 </nav>
             </header>
