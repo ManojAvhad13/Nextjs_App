@@ -10,4 +10,4 @@ const SingleProfilePost = (props) => {
     return <h1>user = {user.empname}, PostId : {user.epostid}</h1>
 }
 
-export default SingleProfilePost    
+export default SingleProfilePost
