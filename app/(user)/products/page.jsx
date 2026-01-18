@@ -1,4 +1,5 @@
 import React from 'react'
+import ProductList from './ProductList';
 
 const Products = async ({ searchParams }) => {
 
@@ -13,6 +14,7 @@ const Products = async ({ searchParams }) => {
     return (
         <div>
             Showing {category} products, sorted by {sort}, page {page}
+            <ProductList />
         </div>
     )
 }
