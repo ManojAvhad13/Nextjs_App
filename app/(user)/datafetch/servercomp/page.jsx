@@ -4,10 +4,16 @@ const DataFetchServer = async (props) => {
     const searchParams = await props.searchParams;
     const userName = searchParams.name;
 
+    await new Promise((resolve) => {
+        setTimeout(() => {
+            resolve();
+        }, 1000);
+    });
+
     // Handle case where no name is provided
     if (!userName) {
         return (
-            <div className="min-h-screen bg-gradient-to-br from-purple-50 via-blue-50 to-indigo-100 flex items-center justify-center p-4">
+            <div className="min-h-screen bg-linear-to-br from-purple-50 via-blue-50 to-indigo-100 flex items-center justify-center p-4">
                 <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-sm w-full">
                     <div className="text-center">
                         <h1 className="text-2xl font-bold text-gray-800 mb-4">
@@ -29,7 +35,7 @@ const DataFetchServer = async (props) => {
     const isMale = userData.gender === 'male';
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-purple-50 via-blue-50 to-indigo-100 flex items-center justify-center p-4">
+        <div className="min-h-screen bg-linear-to-br from-purple-50 via-blue-50 to-indigo-100 flex items-center justify-center p-4">
             <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-sm w-full relative overflow-hidden">
                 {/* Background decorations */}
                 <div className={`absolute top-0 right-0 w-32 h-32 ${isMale ? "bg-blue-100" : "bg-pink-100"} rounded-full -translate-y-16 translate-x-16 opacity-50`}></div>
@@ -38,7 +44,7 @@ const DataFetchServer = async (props) => {
                 <div className="relative z-10">
                     {/* Avatar Section */}
                     <div className="text-center mb-6">
-                        <div className={`w-24 h-24 mx-auto rounded-full flex items-center justify-center mb-4 ${isMale ? "bg-gradient-to-br from-blue-400 to-blue-600" : "bg-gradient-to-br from-pink-400 to-pink-600"} shadow-lg`}>
+                        <div className={`w-24 h-24 mx-auto rounded-full flex items-center justify-center mb-4 ${isMale ? "bg-linear-to-br from-blue-400 to-blue-600" : "bg-linear-to-br from-pink-400 to-pink-600"} shadow-lg`}>
                             <User className="w-12 h-12 text-white" strokeWidth={1.5} />
                         </div>
 
@@ -54,7 +60,7 @@ const DataFetchServer = async (props) => {
 
                     {/* Confidence Section */}
                     <div className="mt-8 space-y-4">
-                        <div className="bg-gradient-to-r from-gray-50 to-gray-100 rounded-lg p-4">
+                        <div className="bg-linear-to-br from-gray-50 to-gray-100 rounded-lg p-4">
                             <p className="text-gray-600 text-sm mb-2">Confidence Level</p>
                             <div className="flex items-center justify-between">
                                 <p className="text-2xl font-bold text-gray-800">{confidencePercentage}%</p>
